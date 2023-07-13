@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+.perfume-container {
+    background-color: white;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.perfume-card{
+    text-align: start;
+    width: 617px;
+    display: flex;
+    
+}
+
+.perfume-images img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.perfume-tag {
+    font-size: 11px;
+    padding-left: 34px;
+    padding-right: 16px;
+    letter-spacing: 8px;
+    color: lightslategray;
+} 
+
+.perfume-content h1{
+    font-size: 37px;
+    padding-left: 29px;
+    padding-right: 66px;
+
+}
+.perfume-content p{
+    font-size: 15px;
+    padding: 14px;
+    padding-left: 30px;
+    padding-right: 35px;
+    line-height: 23px;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+}
+
+.perfume-amount{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.perfume-amount span{
+    font-size: 30px;
+    padding-right: 20px;
+    color:  hsl(158, 36%, 37%);
+   font-size:  'Fira Sans', sans-serif;
+   font-family: 'Outfit', sans-serif;
+   font-weight: bold;
+}
+.perfume-amount p{
+    font-size: 15px;
+    padding-left: 10px;
+    text-decoration-line: line-through;
+    color: rgb(146, 146, 146);
+}
+
+button {
+    margin: 19px 30px;
+    padding: 13px 60px 13px 60px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 100%, 14%);
+}
+
+
+@media (max-width:320px){
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .perfume-container{
+        margin: 0 1em;
+    }
+    
+    .perfume-card{
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+    
+    }
+    .perfume-images{
+        background-image: url(../images/image-product-mobile.jpg);
+    }
+    .perfume-images img{
+        background-image: none;
+    }
+    
+.perfume-tag {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: lightslategray;
+} 
+}
